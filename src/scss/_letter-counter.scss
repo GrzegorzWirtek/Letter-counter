@@ -1,0 +1,125 @@
+.letter-counter {
+    display: flex;
+    flex-wrap: wrap;
+    width: 96%;
+    max-width: $max-width;
+    margin: 0 auto 20px auto;
+
+    @media (min-width:800px) {
+        margin: 0 auto 40px auto;
+    }
+}
+
+.letter-counter__header-sum {
+    flex-basis: 100%;
+    background-color: $header-color;
+    padding: 7px;
+    text-align: center;
+    color: white;
+    border-top: 1px solid $border-color;
+    border-left: 1px solid $border-color;
+    border-right: 1px solid $border-color;
+}
+
+.lc-left {
+    border-top: 1px solid $border-color;
+    border-left: 1px solid $border-color;
+    background-color: lighten($header-color, 7);
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+
+.lc-middle {
+    border-top: 1px solid $border-color;
+    background-color: lighten($header-color, 7);
+    color: white;
+}
+
+.lc-right {
+    border-top: 1px solid $border-color;
+    border-right: 1px solid $border-color;
+    background-color: lighten($header-color, 7);
+    color: white;
+    text-align: center;
+}
+
+
+.lc-left,
+.lc-letter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 20%;
+    border-right: 1px solid $border-color;
+    border-left: 1px solid $border-color;
+    border-bottom: 1px solid $border-color;
+    line-height: 1.3;
+}
+
+.lc-letter {
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.lc-middle,
+.lc-percent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 60%;
+    border-right: 1px solid $border-color;
+    border-bottom: 1px solid $border-color;
+}
+
+.lc-percent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__field {
+        position: relative;
+        flex-basis: 60%;
+        margin: 0 0 0 10px;
+        height: 70%;
+        border: 1px solid $border-color;
+        background-color: $field-empty-color;
+
+        @media (min-width:360px) {
+            flex-basis: 65%;
+        }
+
+        @media (min-width:800px) {
+            flex-basis: 76%;
+        }
+    }
+
+    &__field-inside {
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 27%;
+        background-color: $field-color;
+    }
+
+    &__percent {
+        flex: 15%;
+        text-align: center;
+        font-size: 0.9rem;
+    }
+}
+
+.lc-right,
+.lc-counter {
+    flex-basis: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid $border-color;
+    border-right: 1px solid $border-color;
+}
+
+.lc-counter {
+    font-size: 0.9rem;
+}

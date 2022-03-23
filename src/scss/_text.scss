@@ -1,0 +1,50 @@
+.text {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    max-width: $max-width;
+    margin: 20px auto;
+}
+
+.text__header-wrapper {
+    background-color: $header-color;
+    width: 96%;
+    padding: 20px 0;
+}
+
+.text__header {
+    font-size: 1.3rem;
+    text-align: center;
+    color: white;
+}
+
+#text__area {
+    resize: none;
+    outline: none;
+    border: 1px solid $border-color;
+    width: 96%;
+    height: 30vh;
+    margin: 20px 0;
+    font-size: 1rem;
+    padding: 5px;
+    color: grey;
+
+    @media (min-width:800px) {
+        padding: 10px;
+    }
+}
+
+#text__btn {
+    outline: none;
+    padding: 6px 14px;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: rgb(117, 58, 172);
+    color: white;
+    border: 1px solid $border-color;
+
+    @media (min-width:800px) {
+        padding: 8px 16px;
+    }
+}
