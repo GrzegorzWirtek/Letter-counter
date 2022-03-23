@@ -6,14 +6,13 @@ Visit page: **[Letter counter](https://grzegorzwirtek.github.io/Letter-counter/)
 
 ## General info
 
-Application created for personal use and for learning Webpack. Shows the percentage value of each letter of the Polish alphabet in the text. Created with vanila, objec oriented JavaScript, HTML and CSS, using the Sass preprocessor.
+Application created for personal use and for learning Webpack. Shows the percentage value of each letter of the Polish alphabet in the text. Created with vanila, objec oriented JavaScript, HTML and Sass preprocessor.
 
 ## Technologies
 
 Project is created with:
 
 - **HTML**
-- **CSS**
 - **SASS/SCSS**
 - **JavaScript**
 - **webpack** version 4.35.0
