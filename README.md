@@ -13,7 +13,7 @@ Application created for personal use and for learning Webpack. Shows the percent
 Project is created with:
 
 - **HTML**
-- **SASS/SCSS**
+- **SCSS**
 - **JavaScript**
 - **webpack** version 4.35.0
 - **webpack-cli** version 3.3.5
